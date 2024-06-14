@@ -125,6 +125,20 @@ nav .wrapper {
       color: #FFA500; /* Orange */
       transition: color 0.3s ease;
 }
+.achievement-img{
+      border-radius: 40px;
+}
+.success-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.learn-more{
+      text-align: center;
+      padding: 40px 20px;
+      background-color: red;
+}
 
 .mega-box {
       position: absolute;
@@ -200,9 +214,56 @@ nav .wrapper {
       top: 10px;
       transition: all 0.3s ease;
 }
+.row{
+      margin-top: 50px;
+}
+.ourpara{
+      font-size: 30px;
+      margin: 0  6%;
+}
+/* .course-box{
+      background-color: red;
+} */
+
+@media  (min-width: 0px ) and (max-width: 1100px) {
+      .achievment .row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+      }
+      .achievment .col-6 {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+
+      }
+      .success-box > p {
+            width: 100%;
+            text-align: center;
+            margin-left: -10px;
+      }
+      .space-above-content{
+            display: flex;
+            flex-direction: column;
+
+      }
+      .missionsec{
+            background-color: #86d4f8 ;
+      }
+
+      .second-container {
+            display: flex;
+
+            flex-direction: column-reverse;
+      }
+      .achievement-box{
+            background: #86d4f8 ; /* Blue */
+      }
 
 
-@media screen and (max-width: 970px) {
+
+
+        
       .wrapper .btn {
             display: block;
       }
@@ -303,6 +364,21 @@ nav .wrapper {
             border-radius: 5px;
             font-size: 18px;
       }
+}
+@media screen and (min-width: 1100px) {
+      .achievement-box {
+            margin: 0 10%;
+      }
+      .achievment .col-6 h2 {
+
+            font-size: 10px;
+      }
+      
+      
+}
+
+@media screen and (max-width: 970px) {
+    
 
       .mega-box {
             position: static;
@@ -367,15 +443,15 @@ section.hero-section {
 .hero-section__title {
       font-size: 65px;
       font-weight: 900;
-      color: var(--dark-secondary);
+      color: black;
 }
 
 /* section-title__letters*/
-.hero-section--first-letter {
+/* .hero-section--first-letter {
       color: #86d4f8 ;
-}
+} */
 
-
+/* 
 .hero-section--first-letter:hover {
       color: #86d4f8 ;
 }
@@ -391,6 +467,9 @@ section.hero-section {
 .hero-section__desc {
       color: var#86d4f8 ;
       font-size: 25px;
+} */
+.hero-section__desc{
+      color: black;
 }
 
 .hero-buttons button {
@@ -611,6 +690,7 @@ html {
 }
 
 .row {
+      display: flex;
 
       justify-content: center;
       align-items: center;
@@ -620,13 +700,11 @@ html {
 .col {
 
       text-align: center;
-
-      justify-content: center;
 }
 
 .col img {
-      max-width: 80%;
-      height: auto;
+      max-width: 60%;
+      height: 40%;
       border-radius: 7px;
 
 }
@@ -639,12 +717,12 @@ html {
 
 }
 
-.row .col {
+/* .row .col {
       text-align: center;
 
       justify-content: center;
 
-}
+} */
 
 .para p {
       font-size: 20px;
@@ -652,13 +730,19 @@ html {
       margin-right: 90px;
 
 }
+.col > h3 {
+      font-size: 55px;
+}
+.col > div >  p{
+      font-size: 30px;
+}
 
-.col h3 {
+/* .col h3 {
 
       margin-top: 20px;
       margin-left: 20px;
 
-}
+} */
 
 
 @media only screen and (max-width: 768px) {
@@ -666,12 +750,13 @@ html {
             flex-wrap: wrap;
       }
 
-      .col {
+      /* .col {
             flex: 100%;
             margin: 10px 0;
-      }
+      } */
 
       .col h3 {
+
 
             margin-top: 80%;
       }
@@ -721,21 +806,18 @@ html {
 }
 
 .achievment .col-6 h2 {
-      font-size: 80px;
+      font-size: 50px;
       margin-bottom: 20px;
-      margin-left: 15%;
 }
 
 .achievment .col-6 p {
       font-size: 25px;
       line-height: 1.5;
-      margin-left: 15%;
 }
 
 .achievment button {
-      margin-left: 60%;
       background-color: white;
-      padding: 10px 30px 10px 30px;
+      padding: 20px 40px;
       color: #000;
       border: 2px solid #000;
       border-radius: 20px;
@@ -887,9 +969,7 @@ button {
 }
 
 .col {
-      flex: 1;
       padding: 0px;
-      align-items: center;
       justify-content: center;
 }
 
@@ -958,20 +1038,24 @@ button {
 .courserows .col:hover img {
       transform: scale(1.1);
       /* Increase scale on hover for better interaction */
-      opacity: 0.8;
+      opacity: 0;
       /* Adjust opacity on hover */
 }
+
 
 /*coursepage end */
 
 .testimonial {
-      background-color: rgb(148, 246, 255);
+      /* background-color: rgb(148, 246, 255); */
       border-radius: 10px;
       padding: 20px;
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
       text-align: center;
       max-width: 600px;
       margin: 0 auto;
+}
+.test-bg{
+      background-color: orange
 }
 
 .testimonial-image img {
