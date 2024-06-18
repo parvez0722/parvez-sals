@@ -2110,119 +2110,95 @@ img{
 /*footer_styles*/
 
 /* Custom styles */
+/* General Styles */
 .footer {
       background-color: #1c2331;
-      color: #fff;
-      
-      padding-bottom: 20px;
-}
-
-.footer a {
-      color: #fff;
-}
-
-.footer a:hover {
-      text-decoration:none;
-}
-
-.search-box {
-      max-width: 200px;
-}
-
-.newsletter-form input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-}
-
-.newsletter-form button {
-      width: 100%;
-      padding: 10px;
-}
-.me-auto:hover{
-      font-size: larger;
-
-}
-
-.ms-auto a>i.fa-facebook-f:hover {
-      color: #000000;
-      font-size: x-large;
-}
-
-.ms-auto a>i.fa-twitter:hover {
-      color: #000000;
-      font-size: x-large;
-}
-
-.ms-auto a>i.fa-google:hover {
-      color: #000000;
-      font-size: x-large;
-}
-
-.ms-auto a>i.fa-instagram:hover {
-      color: #000000;
-      font-size: x-large;
-}
-
-.ms-auto a>i.fa-linkedin:hover {
-      color: #000000;
-      font-size: x-large;
-}
-.ms-auto a>i.fa-youtube:hover{
-      color: #000000;
-      font-size: x-large;
-
-}
-.ms-auto a>i.fa-pinterest:hover{
-      color: #000000;
-      font-size: x-large;
-
-}
-.ms-auto a>i.fa-snapchat:hover{
-      color: #000000;
-      font-size: x-large;
-
-}
-
-/* Adjusting map container for mobile screens */
-@media (max-width: 425px) {
-      /*.map-container {
-          width: 100%;
-        }*/
-}
-
-.achieve-txt h2 {
-      text-align: center;
-      font-size: 40px;
-      padding: 50px;
-
-}
-
-.achieve-txt h4 {
-      text-align: left;
-      font-size: 35;
-      padding: 10px;
-      margin-left: 10px;
-}
-
-.achieve-txt p {
-      font-size: 25px;
-      padding: 10px;
-      margin: 20px;
-
-}
-
-.carousel-item video {
-      width: 100%;
-      height: 90%;
-
-}
-
-.news-heading {
-      font-size: 4rem;
-      margin-left: 10%;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-}
+      color: #ffffff;
+      padding: 60px 0;
+    }
+    
+    .footer hr {
+      border-color: #283b91;
+    }
+    
+    .footer h6 {
+      font-weight: bold;
+    }
+    
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Footer columns layout for larger screens */
+    @media (min-width: 769px) {
+      .footer .row > div {
+        margin-bottom: 20px;
+      }
+    }
+    
+    /* Footer columns layout for mobile screens */
+    @media (max-width: 768px) {
+      .footer .container {
+        padding: 0 15px;
+      }
+    
+      .footer .row {
+        flex-direction: column;
+      }
+    
+      .footer .row > div {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    
+      .footer .me-auto,
+      .footer .ms-auto {
+        display: block;
+        text-align: center;
+      }
+    
+      .footer .me-auto span {
+        display: block;
+        margin-bottom: 15px;
+      }
+    
+      .footer .ms-auto {
+        margin-top: 15px;
+      }
+    
+      .footer .ms-auto a {
+        display: inline-block;
+        margin: 0 5px 10px 5px;
+      }
+    
+      .footer img {
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+    
+      .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .newsletter-form input {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 10px;
+      }
+    
+      .newsletter-form button {
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+    
 
 /*faculty page*/
 .mentor-heading {
